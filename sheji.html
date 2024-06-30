@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<div class="body">
+			<div class="imagine">
+				
+			</div>
+			<button class="jixu" onclick="change()">></button>
+			<div class="write">柱福&nbsp;&nbsp;&nbsp;2023-24</div>
+			<div class="ma"><img src="img/柱福-qr code.jpg" alt=""><br>i&nbsp;&nbsp;n
+			&nbsp;&nbsp;s&nbsp;&nbsp;t&nbsp;&nbsp;a&nbsp;&nbsp;g
+			&nbsp;&nbsp;r&nbsp;&nbsp;a&nbsp;&nbsp;m</div>
+		</div>
+		<br><br><br>
+		<div class="body1">
+			<div class="imagine">
+				
+			</div>
+			<button class="jixu1" onclick="change1()">></button>
+			<div class="write1">品 牌 視 覺&nbsp;&nbsp;&nbsp;2020-23</div>
+			
+		</div>
+		<style>
+			.body1{
+				width: 1616px;
+				height: 700px;
+				border: solid 2px #DF4746;
+			}
+			.body{
+				width: 1616px;
+				height: 700px;
+				border: solid 2px #DF4746;
+				background-image: url("img/1.jpg");
+				background-repeat: no-repeat;
+				background-size: 1616px;
+				background-position-y:-230px ;
+			}
+			.imagine{
+				width: 600px;
+				height: 400px;
+				border: solid;
+				margin-left:100px ;
+				margin-top: 150px;
+				background-image: url("img/4.jpg");
+				background-size: 600px;
+			}
+			.jixu1{
+				font-size: 49px;
+				font-weight: 900;
+				color: #5d5d5d;
+				margin-left: 53px;
+				margin-top: 313px;
+				background: transparent;
+				border: 0;
+				float: left;
+			}
+			.jixu{
+				font-size: 49px;
+				font-weight: 900;
+				color: #5d5d5d;
+				margin-left: -741px;
+				margin-top: 324px;
+				background: transparent;
+				border: 0;
+			}
+			.body>div{
+				float: left;
+			}
+			.body1>div{
+				float: left;
+			}
+			.write1{
+				color: #DF4746;
+			font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+				margin-top: 515px;
+				margin-left:85px ;
+				font-size: 20px;
+			}
+			.write{
+				color: #DF4746;
+			font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+				margin-top: 523px;
+				margin-left:116px ;
+				font-size: 20px;
+			}
+			.ma{
+				margin-top: 368px;
+				margin-left:333px ;
+				color: #DF4746;
+				font-size: 20px;
+			font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+				text-align: center;
+			}
+		</style>
+		<script>
+			var i=0;
+			function change(){
+			var ims=document.getElementsByClassName("imagine");
+			
+			if(i==0){
+			ims[0].style.backgroundImage="url('img/4.jpg')";
+				i++;
+			}else if(i==1){
+			ims[0].style.backgroundImage="url('img/5.jpg')";					
+			i++;
+			}else if(i==2){
+			ims[0].style.backgroundImage="url('img/6.jpg')";
+			i++;
+			}else if(i==3){
+			ims[0].style.backgroundImage="url('img/7.jpg')";	
+			i=0;
+			}
+			}
+			function change1(){
+			var ims=document.getElementsByClassName("imagine");
+			
+			if(i==0){
+			ims[1].style.backgroundImage="url('img/品牌視覺-1.jpg')";
+				i++;
+			}else if(i==1){
+			ims[1].style.backgroundImage="url('img/品牌視覺-2.jpg')";					
+			i++;
+			}else if(i==2){
+			ims[1].style.backgroundImage="url('img/品牌視覺-3.jpg')";
+			i++;
+			}else if(i==3){
+			ims[1].style.backgroundImage="url('img/品牌視覺-4.jpg')";	
+			i=0;
+			}
+			}
+		</script>
+	</body>
+</html>

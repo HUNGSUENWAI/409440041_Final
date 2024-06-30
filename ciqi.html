@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<div class="body">
+			<div class="imagine">
+				
+			</div>
+			<button class="jixu" onclick="change()">></button>
+			<div class="write">白瓷系列&nbsp;&nbsp;&nbsp;2022</div>
+			
+		</div>
+		<br><br><br>
+		<div class="body1">
+			<div class="imagine">
+				
+			</div>
+			<button class="jixu1" onclick="change1()">></button>
+			<div class="write1">陶瓷系列&nbsp;&nbsp;&nbsp;2017-18</div>
+			
+		</div>
+		<style type="text/css">
+			.body1{
+				width: 1616px;
+				height: 700px;
+				border: solid 2px #DF4746;
+				background-image: url("img/陶器系列-背景.jpg");
+				background-repeat: no-repeat;
+				background-size: 1616px;
+				background-position-y:-230px ;
+			}
+			.body{
+				width: 1616px;
+				height: 700px;
+				border: solid 2px #DF4746;
+				background-image: url("img/白瓷系列-背景.jpg");
+				background-repeat: no-repeat;
+				background-size: 1616px;
+				background-position-y:-230px ;
+			}
+			.jixu1{
+				font-size: 49px;
+				font-weight: 900;
+				color: #5d5d5d;
+				margin-left: 53px;
+				margin-top: 313px;
+				background: transparent;
+				border: 0;
+				float: left;
+			}
+			.jixu{
+				font-size: 49px;
+				font-weight: 900;
+				color: #5d5d5d;
+				margin-left: 50px;
+				margin-top: 324px;
+				background: transparent;
+				border: 0;
+				float: left;
+			}
+			.imagine{
+				width: 600px;
+				height: 400px;
+				border: solid;
+				margin-left:100px ;
+				margin-top: 150px;
+				background-image: url("img/白瓷系列-1.jpg");
+				background-size: 600px;
+			}
+			.body>div{
+				float: left;
+			}
+			.body1>div{
+				float: left;
+			}
+			.write1{
+				color: #DF4746;
+				font-family: 未 來 熒 黑 - N o r m a l B o o k;
+				margin-top: 515px;
+				margin-left:85px ;
+				font-size: 20px;
+			}
+			.write{
+				color: #DF4746;
+				font-family: 未 來 熒 黑 - N o r m a l B o o k;
+				margin-top: 523px;
+				margin-left:116px ;
+				font-size: 20px;
+			}
+		</style>
+		<script>
+			var i=0;
+			function change(){
+			var ims=document.getElementsByClassName("imagine");
+			
+			if(i==0){
+			ims[0].style.backgroundImage="url('img/白瓷系列-1.jpg')";
+				i++;
+			}else if(i==1){
+			ims[0].style.backgroundImage="url('img/白瓷系列-2.jpg')";					
+			i++;
+			}else if(i==2){
+			ims[0].style.backgroundImage="url('img/白瓷系列-3.jpg')";
+			i++;
+			}else if(i==3){
+			ims[0].style.backgroundImage="url('img/白瓷系列-4.jpg')";	
+			i=0;
+			}
+			}
+			function change1(){
+			var ims=document.getElementsByClassName("imagine");
+			
+			if(i==0){
+			ims[1].style.backgroundImage="url('img/陶器系列-1.jpg')";
+				i++;
+			}else if(i==1){
+			ims[1].style.backgroundImage="url('img/陶器系列-2.jpg')";					
+			i++;
+			}else if(i==2){
+			ims[1].style.backgroundImage="url('img/陶器系列-3.jpg')";
+			i++;
+			}else if(i==3){
+			ims[1].style.backgroundImage="url('img/陶器系列-4.jpg')";	
+			i=0;
+			}
+			}
+		</script>
+	</body>
+</html>
